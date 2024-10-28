@@ -29,7 +29,7 @@
 
 
 <body class="debug bg-black">
-  <!-- FIXME move tis element so it sticks to the body instead of the header -->
+  //REVIEW move tis element so it sticks to the body instead of the header
   <nav class="container-fluid sticky-top">
     <!-- NOTE FIRST BORDER!! -->
     <div class="row discover-space-header border border-dark-subtle rounded border-success p-2 border-opacity-10">
@@ -42,51 +42,52 @@
     <!-- SECTION navbar -->
 
     <!-- SECTION landing -->
-    <!-- FIXME add background-image to this row -->
-    <section class="row my-4">
-      <!-- NOTE P equals PADDING as M equals MARGIN. Can go on y/x axis -->
-      <!-- FIXME move this into your column-6 -->
-      <div class="space-white raleway-uniquifier large-font p-2 m-2 border border-dark">
-        Ready, set, <span class="fw-bold yellow-star font-italic">LAUNCH!</span>
-        <!-- SECTION FORM start -->
-        <!-- FIXME move this column into a row -->
-        <div class="form-group col-md-6 p-2">
+    <!-- REVIEW add background-image to this row -->
+    <section class="row my-4  discover-saturn">
+      <div class="form-group col-md-6 p-2">
+        <div class="space-white raleway-uniquifier large-font p-4 m-2 border border-dark">
+          Ready, set, <span class="fw-bold yellow-star font-italic">LAUNCH!</span>
           <input type="text" class="form-control" id="exampleName" placeholder="SEARCH">
         </div>
       </div>
 
+      <div class="col-md-6 space-white oxanium-uniquifier large-font d-none d-md-block p-5">
+        <i class="mdi mdi-rocket-launch-outline yellow-star"></i>
+        Discover the vastness of our <span class="space-white">Cosmos!</span>
+        <!-- NOTE Does a "p" tag belong inside of a div in order for the TEXT to show up? YES -->
+        <p class="small-font raleway-uniquifier font-italic p-4 space-white d-flex justify-content-end ">
+          Lorizzle
+          ipsizzle the bizzle sit phat,
+          mofo
+          adipiscing
+          for
+          sure.
+          Nullizzle sapien
+          velizzle...
+        </p>
+        <!-- NOTE Look for <blockquotes> next time -->
+        <p
+          class="space-white raleway-uniquifier small-font font-italic fw-light dramatic-gray d-flex justify-content-end">
+          -Snoop</p>
       </div>
+
+      <!-- NOTE P equals PADDING as M equals MARGIN. Can go on y/x axis -->
+      <!-- FIXME move this into your column-6 -->
+      <!-- REVIEW move this column into a row (MOVED from line 50 to line 47) -->
+
+
       <!-- SECTION JUST A TEST!!! (d-flex and flexbox in general) -->
       <!-- NOTE The SPAN tag can be used to customize individual text OOOhh -->
-      <div class="container-fluid">
+      <div class="container-fluid border border-dark">
         <!-- FIXME make sure this col is inside of the row above <div> -->
-        <!-- FIXME look at using d-none and a different display property with a breakpoint, look at read's SECTION filter -->
-        <div class="col space-white oxanium-uniquifier large-font p-5 m-2 border border-bottom-0 border-dark">
-          <i class="mdi mdi-rocket-launch-outline yellow-star"></i>
-          Discover the vastness of our <span class="yellow-star">Cosmos!</span>
-          <!-- NOTE Does a "p" tag belong inside of a div in order for the TEXT to show up? YES -->
-          <p class="small-font raleway-uniquifier font-italic fw-light p-4 dramatic-gray d-flex justify-content-end">
-            Lorizzle
-            ipsizzle the bizzle sit phat,
-            mofo
-            adipiscing
-            for
-            sure.
-            Nullizzle sapien
-            velizzle...
-          </p>
-          <!-- NOTE Look for <blockquotes> next time -->
-          <p
-            class="space-white raleway-uniquifier small-font font-italic fw-light dramatic-gray d-flex justify-content-end">
-            -Snoop
-          </p>
-        </div>
+        <!-- REVIEW look at using d-none and a different display property with a breakpoint, look at read's SECTION filter -->
+
       </div>
     </section>
 
     <section class="row">
       <!-- FIXME change order here -->
-      <div class="col-md-6 border border-dark">
+      <div class="col-md-6 border border-dark order-2 order-md-1">
         <!-- NOTE OOOHHH, so add padding/margins to divs within divs to position it!! -->
         <div class="p-3">
           <h1 class="space-white oxanium-uniquifier medium-font p-2 mt-3 yellow-star">It takes time, practice, and a
@@ -101,7 +102,7 @@
         </div>
       </div>
       <div
-        class="col p-5 m-4 bg-info bg-opacity-10 bg-info font-coral border border-warning border border-success p-2 border-opacity-">
+        class="col p-5 m-4 bg-info bg-opacity-10 bg-info font-coral border order-1 order-md-2 border-warning border border-success p-2 border-opacity-">
         <p class="raleway-uniquifier medium-font p-4 font-monospace"> <i
             class="mdi mdi-star-shooting-outline m-2 yellow-star p-3"></i>Still
           learning</p>
@@ -123,20 +124,26 @@
     <div class="container-fluid">
       <section class="row">
         <!-- NOTE cols (sm/md/lg) adjusts the size(s) to a more mobile friendly UI! -->
-        <div class="col-md-6">
-          <h2 class="m-4 p-4 yellow-star fw-light font-italic">Shoot for the Moon. Even if you miss, you'll land among
+
+
+
+        <div class="col">
+          <h2 class="m-4 p-4 yellow-star fw-light font-italic p-2">Shoot for the Moon. Even if you miss, you'll land
+            among
             the
             stars!</h2>
-          <p class="space-white fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsam quis
+          <p class="space-white fw-light p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsam quis
             modi
             commodi
-            suscipit ipsum inventore impedit reiciendis quisquam. Soluta officia libero explicabo incidunt, dolore neque
+            suscipit ipsum inventore impedit reiciendis quisquam. Soluta officia libero explicabo incidunt, dolore
+            neque
             dolores voluptates voluptatum provident? Can you click this button as many times as there are stars in the
             known <span class="yellow-star">universe?</span> I bet you can't!</p>
           <div class="text-center">
             <button class="btn btn-outline-light mb-3">CLICK</button>
           </div>
         </div>
+
         <!-- NOTE Line(s) 117 and 128 are essentially the SAME as far as getting them to line up left to right!! DIV wise! -->
         <div class="col-md-6 p-3"><img class="space-img-crop border
           border-dark" src="assets/img/space-back.jpg" alt="IMAGE">
@@ -156,8 +163,8 @@
             src="assets/img/orions-belt.jpg" alt="space-bg-main"></div>
         <!-- FIXME looks at the magic-card magic-container and relative card classes from read -->
         <div class="col-md-6 p-3">
-          <div class="card shadow subscribe-card p-3">
-            <div class="card-body p-4">
+          <div class="card p-3">
+            <div class="p-4">
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iste exercitationem vero, quam
                 dignissimos aspernatur sunt, quaerat est saepe nostrum hic quas doloribus ipsum asperiores eligendi
                 odit. Autem, quae qui!</p>
@@ -170,77 +177,81 @@
 
       </section>
       <!-- SECTION Could NOT overlap text box seen ABOVE -->
-      <!-- FIXME move this outside of the main -->
-      <footer class="container">
-        <!-- FIXME ALIGN your columns so that they are CENTERed -->
-        <section class="row">
-          <div class="col-md-12">
-            <h2 class="space-white oxanium-uniquifier text-center my-2">TESTIMONIALS</h2>
-            <hr class="yellow-star" />
-            <!-- NOTE <hr/> equals a LINE BREAK! -->
-          </div>
-          <!-- FIXME look at re-ordering comment from beans repo -->
-
-          <div class="col-md-3 space-white">
-            <div class="card">
-              <p class="font-italic fw-light p-4"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
-              <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
-            </div>
-          </div>
-          <div class="col-1 mdi mdi-star-shooting-outline yellow-star m-2"></div>
-          <div class="col-md-3 space-white">
-            <!-- FIXME add icons or more text to this card so it is larger -->
-            <div class="card">
-              <p class="font-italic fw-light p-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
-              <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
-            </div>
-          </div>
-          <div class="col-1 mdi mdi-star-shooting-outline yellow-star m-2"></div>
-          <div class="col-md-3 space-white">
-            <div class="card">
-              <p class="font-italic fw-light p-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
-              <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
-            </div>
-          </div>
-
-        </section>
-        <hr class="space-white" />
-        <section class="container-fluid mt-3">
-          <div class="row">
-            <div class="col-md"></div>
-            <div class="col-md">
-              <h6 class="space-white fw-light yellow-star p-3">Visit us!</h6>
-              <p class="space-white fw-light">8455 Westpark St, Boise ID 83704</p>
-            </div>
-            <div class="col-md"></div>
-            <div class="col-md">
-              <h6 class="space-white fw-light yellow-star p-4">Contact Us!
-                <p class="space-white fw-light p-4"> (208) 999-9999 DiscoverSpace@gmail.com</p>
-              </h6>
-            </div>
-            <div class="col-md"></div>
-            <div class="col-md">
-              <h6 class="space-white fw-light yellow-star">Social!</h6>
-              <div class="mdi mdi-github space-white"></div>
-              <div class="mdi mdi-gmail space-white"></div>
-              <div class="mdi mdi-facebook space-white"></div>
-            </div>
-            <!-- NOTE line up the socials if time PERMITS!! -->
-            <div class="col"></div>
-          </div>
-
-
-        </section>
-      </footer>
+      <!-- REVIEW move this outside of the main -->
   </main>
   <!-- NOTE PLEASE ASK how to alternate patterns between columns on mobile version! -->
 
 
 
 
+  <footer class="container">
+    <!-- FIXME ALIGN your columns so that they are CENTERed -->
+    <section class="row">
+      <div class="col-12">
+        <h2 class="space-white oxanium-uniquifier text-center my-2">TESTIMONIALS</h2>
+        <hr class="yellow-star" />
+        <!-- NOTE <hr/> equals a LINE BREAK! -->
+      </div>
+      <!-- FIXME look at re-ordering comment from beans repo -->
+    </section>
+
+    <section class="row align-items-center">
+      <div class="col-md-4 order-2 order-md-1 space-white">
+        <div class="card mb-3">
+          <p class="font-italic fw-light p-4"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
+          <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
+        </div>
+      </div>
+      <!-- <div class="col-1  mdi mdi-star-shooting-outline yellow-star m-2"></div> -->
+      <div class="col-md-4 order-1 order-md-2 space-white">
+        <!-- //REVIEW - add icons or more text to this card so it is larger// -->
+        <div class="card mb-3">
+          <p class="font-italic fw-light p-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam necessitatibus ullam nisi perspiciatis voluptates temporibus! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Deleniti
+            magnam necessitatibus ullam nisi perspiciatis!"</p>
+          <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
+        </div>
+      </div>
+      <!-- <div class="col-1 mdi mdi-star-shooting-outline yellow-star m-2"></div> -->
+      <div class="col-md-4 order-3 space-white">
+        <div class="card mb-3">
+          <p class="font-italic fw-light p-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
+          <div class=" mdi mdi-star-shooting yellow-star m-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="space-white" />
+    <section class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md"></div>
+        <div class="col-md">
+          <h6 class="space-white fw-light yellow-star p-3">Visit us!</h6>
+          <p class="space-white fw-light">8455 Westpark St, Boise ID 83704</p>
+        </div>
+        <div class="col-md"></div>
+        <div class="col-md">
+          <h6 class="space-white fw-light yellow-star p-4">Contact Us!
+            <p class="space-white fw-light p-4"> (208) 999-9999 DiscoverSpace@gmail.com</p>
+          </h6>
+        </div>
+        <div class="col-md"></div>
+        <div class="col-md">
+          <h6 class="space-white fw-light yellow-star">Social!</h6>
+          <div class="mdi mdi-github space-white"></div>
+          <div class="mdi mdi-gmail space-white"></div>
+          <div class="mdi mdi-facebook space-white"></div>
+        </div>
+        <!-- NOTE line up the socials if time PERMITS!! -->
+        <div class="col"></div>
+      </div>
+
+
+    </section>
+  </footer>
 </body>
 
 
