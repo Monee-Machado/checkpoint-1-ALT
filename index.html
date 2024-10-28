@@ -29,23 +29,27 @@
 
 
 <body class="debug bg-black">
+  <!-- FIXME move tis element so it sticks to the body instead of the header -->
+  <nav class="container-fluid sticky-top">
+    <!-- NOTE FIRST BORDER!! -->
+    <div class="row discover-space-header border border-dark-subtle rounded border-success p-2 border-opacity-10">
+      <h1 class="space-white raleway-uniquifier justify-content-end py-3">Discover<span
+          class="oxanium-uniquifier">SPACE</span></h1>
+    </div>
+  </nav>
   <!-- SECTION CONTAINER START--END on line -->
   <header class="container">
     <!-- SECTION navbar -->
-    <nav class="container-fluid sticky-top">
-      <!-- NOTE FIRST BORDER!! -->
-      <div class="row discover-space-header border border-dark-subtle rounded border-success p-2 border-opacity-10">
-        <h1 class="space-white raleway-uniquifier justify-content-end py-3">Discover<span
-            class="oxanium-uniquifier">SPACE</span></h1>
-      </div>
-    </nav>
 
     <!-- SECTION landing -->
+    <!-- FIXME add background-image to this row -->
     <section class="row my-4">
       <!-- NOTE P equals PADDING as M equals MARGIN. Can go on y/x axis -->
+      <!-- FIXME move this into your column-6 -->
       <div class="space-white raleway-uniquifier large-font p-2 m-2 border border-dark">
         Ready, set, <span class="fw-bold yellow-star font-italic">LAUNCH!</span>
         <!-- SECTION FORM start -->
+        <!-- FIXME move this column into a row -->
         <div class="form-group col-md-6 p-2">
           <input type="text" class="form-control" id="exampleName" placeholder="SEARCH">
         </div>
@@ -55,6 +59,8 @@
       <!-- SECTION JUST A TEST!!! (d-flex and flexbox in general) -->
       <!-- NOTE The SPAN tag can be used to customize individual text OOOhh -->
       <div class="container-fluid">
+        <!-- FIXME make sure this col is inside of the row above <div> -->
+        <!-- FIXME look at using d-none and a different display property with a breakpoint, look at read's SECTION filter -->
         <div class="col space-white oxanium-uniquifier large-font p-5 m-2 border border-bottom-0 border-dark">
           <i class="mdi mdi-rocket-launch-outline yellow-star"></i>
           Discover the vastness of our <span class="yellow-star">Cosmos!</span>
@@ -79,6 +85,7 @@
     </section>
 
     <section class="row">
+      <!-- FIXME change order here -->
       <div class="col-md-6 border border-dark">
         <!-- NOTE OOOHHH, so add padding/margins to divs within divs to position it!! -->
         <div class="p-3">
@@ -147,6 +154,7 @@
       <section class="row dark-main">
         <div class="col-md-6"><img class="space-img-crop border border-bottom-0 border-dark"
             src="assets/img/orions-belt.jpg" alt="space-bg-main"></div>
+        <!-- FIXME looks at the magic-card magic-container and relative card classes from read -->
         <div class="col-md-6 p-3">
           <div class="card shadow subscribe-card p-3">
             <div class="card-body p-4">
@@ -162,14 +170,16 @@
 
       </section>
       <!-- SECTION Could NOT overlap text box seen ABOVE -->
-
+      <!-- FIXME move this outside of the main -->
       <footer class="container">
+        <!-- FIXME ALIGN your columns so that they are CENTERed -->
         <section class="row">
           <div class="col-md-12">
             <h2 class="space-white oxanium-uniquifier text-center my-2">TESTIMONIALS</h2>
             <hr class="yellow-star" />
             <!-- NOTE <hr/> equals a LINE BREAK! -->
           </div>
+          <!-- FIXME look at re-ordering comment from beans repo -->
 
           <div class="col-md-3 space-white">
             <div class="card">
@@ -180,6 +190,7 @@
           </div>
           <div class="col-1 mdi mdi-star-shooting-outline yellow-star m-2"></div>
           <div class="col-md-3 space-white">
+            <!-- FIXME add icons or more text to this card so it is larger -->
             <div class="card">
               <p class="font-italic fw-light p-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
                 magnam necessitatibus ullam nisi perspiciatis voluptates temporibus!"</p>
